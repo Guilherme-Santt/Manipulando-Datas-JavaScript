@@ -87,3 +87,12 @@ if(dataProduto > vencimento){
 }else{
     document.getElementById("p").innerHTML = "Seu produto ainda não venceu!";
 }
+
+var datInicial = new Date();
+var datFinal = new Date(2024, 11, 31);
+
+var diferença =   datFinal.getTime() - datInicial.getTime();
+
+var difdias = Math.ceil(diferença / (24 * 60 * 60 * 1000));
+
+console.log(difdias)
